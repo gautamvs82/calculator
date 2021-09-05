@@ -8,10 +8,12 @@ on:
     paths:
       - src/**/*
       - build.gradle
+      - .github/**/*
   pull_request:
     paths:
       - src/**/*
       - build.gradle
+      - .github/**/*
 
 jobs:
   build:
@@ -27,6 +29,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
