@@ -5,5 +5,7 @@ public class Multiplier {
     public float multiply(float a, float b){
         return a * b;
     }
-    // Dummy Changes
+    public double multiply(double a, double b){
+        return a * b;
+    }
 }
