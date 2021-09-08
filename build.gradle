@@ -38,7 +38,7 @@ task integrationTest(type: Test) {
 
     outputs.upToDateWhen { false } // other way: inputs.upToDateWhen { false }
     
-    mustRunAfter test
+    //mustRunAfter test
 }
 
-check.dependsOn integrationTest
+//check.dependsOn integrationTest
